@@ -30,4 +30,9 @@ jobs:
       # Print all environment variables
       - name: displaying all environment variables
         run: echo $PATH
+      
+      # install dbt dependices
+      - name: installing dbt cli
+        run: |
+          pip install dbt-core dbt-snowflake
           
