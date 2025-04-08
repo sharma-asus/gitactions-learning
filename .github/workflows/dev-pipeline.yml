@@ -29,7 +29,7 @@ jobs:
 
       # Setup pipx ensurepath
       - name: Install ensurepath
-        run: pipx ensurepath
+        run: pipx --force ensurepath
 
       # Print all environment variables
       - name: displaying all environment variables
