@@ -35,4 +35,9 @@ jobs:
       - name: installing dbt cli
         run: |
           pip install dbt-core dbt-snowflake
+
+      # check the dbt version
+      - name: displaying the dbt version
+        run: |
+          dbt --version
           
