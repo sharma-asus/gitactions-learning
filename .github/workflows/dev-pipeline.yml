@@ -26,4 +26,12 @@ jobs:
       # install snowflake cli
       - name: Install snowflake CLI
         uses: snowflakedb/snowflake-cli-action@v1.5
+
+      # Setup pipx ensurepath
+      - name: Install ensurepath
+        run: pipx ensurepath
+
+      # Print all environment variables
+      - name: displaying all environment variables
+        run: echo $PATH
           
